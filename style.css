@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@700&family=Ubuntu:ital,wght@0,300;0,500;1,300;1,400&display=swap');
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    color: white;
+    background-color: #ff0000; /* White*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+#raiseDiv {
+  visibility: visible;
+  transition: 0.3s;
+}
+#parentZone {
+  visibility: visible;
+  transition: 0.3s;
+}
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    display: block;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  .imgBeforeLoad {
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -25px 0 0 -25px;
+  transform: translateX(-50px);
+  }
+  
+  .sidenav li {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    font-weight: bold;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #000000;
+    font-weight: bold;
+  }
+  .sidenav li:hover {
+    color: #ffffff;
+    font-weight: bold;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    font-weight: bold;
+  }
+  .sidenav .closebtn:hover {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    font-weight: bold;
+    color: #000000;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s;
+    padding: 20px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+  .redBg {
+      background-color: red;
+      color: white;
+      font-size: medium;
+  }
+  .introText{
+    background-image: url("mountain-man.png");
+  }
+  .text-white {
+      color: white;
+  }
+  .raiseUp {
+      transform: translateY(-50px);
+  }
+  .description {
+      font-size: 21px;
+      transform: translateY(-15px);
+  }
+  .regular {
+    font-family: 'Noto Sans Display', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    background-color: white;
+    color: black;
+  }
+  .lightButton {
+color: white;
+background-color: rgb(0, 0, 0);
+width: 50px;
+height: 30px;
+padding: 0;
+font-weight: bold;
+font-family: 'Noto Sans Display', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+border: none;
+transition: 0.3s;
+  }
+  .darkButton {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    width: 50px;
+    height: 30px;
+    padding: 0;
+    border: none;
+    transition: 0.3s;
+  }
+  .input {
+    background-color: white;
+    border-color: black;
+    width: 256px;
+    height: 30px;
+    font-size: 18px;
+    margin-left: 8px;
+  }
+  .input-id {
+    background-color: white;
+    border-color: black;
+    width: 329px;
+    height: 30px;
+    font-size: 18px;
+    transform: translateY(-16px);
+  }
+  .btn-sg {
+    font-size: 18px;
+    color: red;
+    border-color: red;
+    background-color: white;
+    height: 40px;
+    width: fit-content;
+    border-radius: 80px;
+    transition: 0.3s;
+    transform: translateY(-20px);
+  }
+  .btn-sg:hover {
+    background-color: red;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    border-color: red;
+    height: 40px;
+    width: fit-content;
+    border-radius: 78px;
+    transition: 0.3s;
+    transform: translateY(-20px);
+  }
+  .btn-sg:active {
+    border:none;
+  }
+  
+  .btn-ask {
+    font-size: 18px;
+    color: rgb(255, 0, 0);
+    border: none;
+    height: 40px;
+    font-weight: bold;
+    box-shadow: none;
+    width: 100%;
+    border-radius: 80px;
+    transition: 0.3s;
+    background-color: rgb(255, 255, 255);
+    transform: translateY(-25px);
+  }
+  .btn-ask:hover {
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    border: none;
+    height: 40px;
+    font-weight: bold;
+    box-shadow: none;
+    width: 100%;
+    border-radius: 80px;
+    transition: 0.3s;
+    background-color: rgb(0, 0, 0);
+    transform: translateY(-25px);
+  }
+  .btn-ask:active {
+    border:none;
+    box-shadow: none;
+    transition: 0.3s;
+  }
+  .questionText {
+    font-size: 18px;
+    color: black;
+  }
+
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .modal-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+  }
+  
+  /* Modal Body */
+  .modal-body {padding: 2px 16px;}
+  
+  /* Modal Footer */
+  .modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3),0 6px 20px 0 rgba(0,0,0,0.19);
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  
+  /* Add Animation */
+  @keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+  }
+  .secondText {
+    margin-top: 16px;
+  }
+  .imgClass {
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+  }
+  .btn-meet {
+    font-size: 18px;
+    color: red;
+    border-color: red;
+    height: 40px;
+    font-weight: bold;
+    box-shadow: none;
+    width: 10%;
+    border-radius: 80px;
+    transition: 0.3s;
+    background-color: white;
+margin-left: 10px;
+  }
+  .btn-meet:hover {
+    font-size: 18px;
+    color: white;
+    border-color: red;
+    background-color: red;
+    height: 40px;
+    font-weight: bold;
+    box-shadow: none;
+    width: 10%;
+    border-radius: 80px;
+    transition: 0.3s;
+  }
+  .darkOrLight {
+    margin-left: 16px;
+  }
+  

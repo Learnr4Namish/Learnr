@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="red_learnr.png" type="image/png">    
+    <link rel="stylesheet" href="/learn/style-2.css">
+    <link rel="stylesheet" href="/learn/row.css">
+    <link rel="stylesheet" href="/learn/integers.css">
+    <meta http-equiv='cache-control' content='no-cache'>
+<meta http-equiv='expires' content='0'>
+<meta http-equiv='pragma' content='no-cache'>
+    <title>Learnr: learn</title>
+</head>
+<body class="regular">
+    <div class="parent" id="parentZone">
+        <img src="red_learnr.png" alt="icon" width="36" height="36" id="logoImg">
+<p class="askrText" id="askrText"><b>Learnr Concepts</b></p>
+<div class="darkOrLight">
+  <button class="lightButton" id="light" onclick="doLight()">Light</button>
+  <button class="darkButton" id="dark" onclick="doDark()">Dark</button>
+</div>
+    </div>
+    <div class="raiseUp-less" id="contentArea">
+      <p id="uidText" class="description"><b>UNABLE TO GET YOUR NAME</b></p>
+        <div class="tab raiseUp-less" id="tabsZone">
+            <button id="learn" class="tablinks" onclick="openCity(event, 'London')"><b>Learn</b></button>
+            <button id="concepts" class="tablinks" onclick="openCity(event, 'Paris')"><b>Concepts</b></button>
+            <button id="test" class="tablinks" onclick="openCity(event, 'Tokyo')"><b>Test</b></button>
+          </div>
+          <!-- Tab content -->
+          <div class="contents" id="contentZone">
+            <div id="London" class="tabcontent">
+              <div style="font-size: 18px; font-weight: bold; color: black; transform: translateY(-4px);" id="mathAlert">Mathematics Corner</div>
+              <div id="real-numbers" class="list-transform">
+                  <p class="list-text" style="transform: translateY(-8px); color: black; font-weight: bold;" id="realAlert"><b>Real Numbers</b></p>
+                  <button class="btn-univ-list" onclick="location.href = study + formUid;" style="background-color: black; color: white;" id="startLrn">Start learning</button>
+                      </div>
+                      <div style="font-size: 18px; font-weight: bold; color: black; transform: translateY(-4px);" id="scienceAlert">Science Corner</div>
+                      <p class="list-text" style="transform: translateY(-8px); color: black; font-weight: bold;" id="realAlert"><b>Motion and Time [Physics]</b></p>
+                  <button class="btn-univ-list" onclick="location.href = '/learn/motion-and-time.html' + prefixText + uid;" style="background-color: black; color: white;" id="startLrn">Start learning</button>
+            </div>
+            
+            <div id="Paris" class="tabcontent">
+              <div style="font-size: 18px; font-weight: bold; color: black; transform: translateY(-4px);" id="mathAlert">Mathematics Corner</div>
+              <h3 style="transform: translateY(-20px); font-weight: bold;">Learnr Concepts</h3>
+              <h3 style="font-weight: bold; transform: translateY(-10px);">Real Numbers</h3>
+              <button class="btn-univ-list" style="transform: translateY(-30px); background-color: black; color: white;" onclick="window.location.href = urlTodo + prefixText + uid" id="startConp"><b>Start Learning</b></button>
+              <div style="font-size: 18px; font-weight: bold; color: black; transform: translateY(-4px);" id="scienceAlert">Science Corner</div>
+              <p class="list-text" style="transform: translateY(-8px); color: black; font-weight: bold;" id="motionAlert"><b>Motion and Time [Physics]</b></p>
+          <button class="btn-univ-list" onclick="location.href = '/learn/';" style="background-color: black; color: white;" id="startLrn1">Start learning</button>
+            </div>
+
+            
+            <div id="Tokyo" class="tabcontent">
+              <h3 style="transform: translateY(-20px); font-weight: bold;">Learnr Tests</h3>
+              <h3 style="font-weight: bold; transform: translateY(-10px);">Real Numbers</h3>
+              <button class="btn-univ-list" style="transform: translateY(-30px); background-color: black; color: white;" onclick="window.location.href = '/learn/test_learnr_real_numbers.html' + prefixer; " id="startTest"><b>Start a test</b></button>
+            </div>
+          </div>
+        
+    </div>
+    <script src="/learn/home.js"></script>
+    <script src="/learn/184645SBJN.js"> </script>
+    <script src="/learn/doDark.js"></script>
+    <script src="/learn/doLight.js"></script>
+    <script src="/learn/test_url.js"></script>
+</body>
+</html>

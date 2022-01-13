@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="/learn/style.css">
+    <link rel="stylesheet" href="/learn/row.css">
+    <title>Learnr: Meet</title>
+</head>
+<body class="regular" id="documentBody">
+    <div class="parent">
+<p class="askrText regular" id="askrText" style="margin-left: 0;"><b>Learnr Meet</b></p> 
+<span class="material-icons" style="font-size: 45px; transform: translateY(-4px); margin-left: 4px;">
+    videocam
+</span>
+    </div>
+    <div class="raiseUp-less">
+            <input class="formInput" name="name" id="name" placeholder="Please enter your name">
+            <button class="btn-next regular" style="transform: translateY(20px); font-weight: bold; background-color: black; color: white;" onclick="createNewMeeting()"><B>Next</B></button>
+    </div>
+    <div id="secondIntro"></div>
+    <script src="/learn/meeting.js"></script>
+    <script src = "/learn/AgoraRTC_N-4.8.1.js"></script>
+    <script src = "/vendor/jquery-3.4.1.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  
+</body>
+</html>

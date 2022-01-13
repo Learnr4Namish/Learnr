@@ -1,0 +1,7 @@
+#real-numbers {
+    transform: translateY(4px);
+    transition: 0.3s;
+    border-color: rgb(255, 255, 255);
+    border-width: 1px;
+    border-style: solid;
+}

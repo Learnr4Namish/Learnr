@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="row.css">
+    <link rel="stylesheet" href="subjects.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="shortcut icon" href="red_learnr.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+<meta http-equiv='cache-control' content='no-cache'>
+<meta http-equiv='expires' content='0'>
+<meta http-equiv='pragma' content='no-cache'>
+    <title>Learnr - Learn on the go [Curently in development and has not been finished]</title>
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+<script>
+  window.OneSignal = window.OneSignal || [];
+  OneSignal.push(function() {
+    OneSignal.init({
+      appId: "f29526e9-d194-4fa5-b1b6-a511e5dd0324",
+    });
+  });
+</script>
+</head>
+<body class="regular">
+    <div class="parent" id="parentZone">
+    <div id="mySidenav" class="sidenav">
+        <button class="closebtn" onclick="closeNav()" style="background-color: rgb(255, 0, 0); border:none; color:white;">&times;</button>
+        <a href="calculator/index.html">Learnr Calculator</a>
+        <a href="quiz/index.html">Learnr Quiz</a>
+        <a href="/learn/meet.html">Learnr Meet [New]</a>
+        <a href="/learn/stream.html">Learnr Live stream [New]</a>
+          <li onclick="askNow(anonymous, userName)">Learnr Concepts</li>
+          <a href="/learn/login.html">Learnr Login</a>
+          <a href="/learn/new.html">Learnr New Account</a>
+          <button class="btn-ask" style="font-weight:bold; transform: translateY(16px);"><b>Ask a doubt</b></button>
+      </div>
+      
+      <!-- Use any element to open the sidenav -->
+      <span class="material-icons" onclick="openNav()" width="64" height="64">
+        menu
+        </span>
+<img src="red_learnr.png" alt="icon" width="36" height="36" class="marginLeft" id="logoImg">
+<p class="askrText regular" id="askrText"><b>Learnr</b></p>
+<div class="darkOrLight">
+    <button class="lightButton" id="light" onclick="doLight()">Light</button>
+    <button class="darkButton" id="dark" onclick="doDark()">Dark</button>
+</div>
+    </div>
+           </p>
+    <div class="raiseUp" id="raiseDiv">
+        <h2><b>Learn without any tension!</b></h2>
+            <p class="description"><b>Learnr has many methods to help students and people to learn concepts easily! Anybody with learnr can become an expert because of complete explainations. If you also want to become one of those experts, then try Learnr now! It's completely free without any payment and you can learn at the comfort of your home. Monthly tests are also organised for everybody to check what they have learnt. At the end of the test, you will get a complete analysis of your focus areas. If you participate in weekly quizzes which is conducted every weekends, then one who secures the highest point will be known by all learnr students. Every Learnr student has a leaderboard to see who is performing well.</b></p>
+            <h2><b>Differences between physical tuitions and Learnr:</b></h2>
+            <p class="description"><b>Most of the students study in schools, don't they? Many of these students study well and many of them don't study well and are forced to go to tuitions, aren't they? But tuitions aren't always the best solutions to get good education. Many of us fear to ask questions in tuitions. In fact the tutors of the tuitions also don't teach the concepts so efficiently and we finally have doubts that last for our whole life! To eradicate this away, many edutech companies like Byju's and many other have been developed. Learnr is also one of these edutech companies. Although Learnr is not a company, it's a website through which you get to learn daily concepts like daily facts and so much. Learnr has educational resources for subjects like:-</b></h2>
+                <div id="mathematics">
+                    <img src="mathematics.png" alt="mathematics" width="128" height="128" class="imgClass">
+                <p class="description"><b>Mathematics</b></p>
+                </div>
+                <div id="science">
+                    <img src="science.png" alt="science" width="136" height="128" class="imgClass">
+                    <p class="description"><b>Science</b></p>
+                </div>
+                <div id="english">
+                    <img src="english.png" alt="English" width="128" height="128" class="imgClass">
+                    <p class="description"><b>English</b></p>
+                </div>
+        <p class="description" style="font-weight: bold;">Want to learn without signing up? Yes, that's also possible! Click the button below to generate a username and that's all, you can learn without signing up.</p>
+        <button class="btn-ask regular" onclick="askNow(anonymous, userName)" id="xyzButton">Next</button>
+      <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+      <script src="side-nav.js"></script>
+      <script src="question-search.js"></script>
+      <script src="text-length-check.js"></script>
+      <script src="sign-up-click.js"></script>
+      <script src="ask.js"></script>
+      <script src="doDark.js"></script>
+      <script src="doLight.js"></script>
+      <script src="beforeDo.js"></script>
+      <script>
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+      </script>
+      <script src="messenger.js"></script>
+</body>
+</html>

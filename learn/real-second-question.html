@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/learn/style.css">
+    <link rel="stylesheet" href="/learn/row.css">
+    <link rel="shortcut icon" href="red_learnr.png" type="image/png">
+    <meta http-equiv='expires' content='0'>
+<meta http-equiv='pragma' content='no-cache'>
+    <title>Introduction to Real Numbers:Learnr</title>
+</head>
+<body class="regular">
+    <div class="parent">
+        <img src="icon.png" alt="icon" width="36" height="36">
+<p class="askrText"><b>Introduction to real numbers</b></p>
+    </div>
+    <div class="raiseUp-less">
+      <video width="360" height="360" class="videoClass" controls>
+        <source src="https://cdn-corontrak-app.web.app/howto.mp4">
+        </video>
+        <div>
+            <button class="btn-next" id="myBtn"><b>Next</b></button>
+        </div>
+        <div id="myModal" class="modal">
+        
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <div class="parent">
+                <img src="red_learnr.png" alt="icon" width="36" height="36">
+        <p class="askrText"><b>Learnr Question</b></p>
+            </div>
+              <p class="description" id="gpt" style="color: black;"><b>Now is the time for a question! Answer the question below to show us what you have learnt.</b></p>
+              <p class="description" id="mbr" style="color: black;"><b>"Real numbers can never be negative. They are always positive."</b></p>
+              <div style="transform: translateY(-16px);">
+                <div class="answerDiv-ls" id="firstCheck" onclick="firstAns()"><b>True</b></div>
+                <div class="answerDiv-ls" id="secondCheck" onclick="secAns()"><b>False</b></div>
+                  <button class="btn-next" id="checkAns" style="color: white; background-color: black; font-weight: bold;">
+        <b>Check</b>
+                  </button>
+                  <p class="askrText" style="font-size: 24px;" id="explanation">
+                    <b> Explanation:- As integer includes the set of Real Numbers, real numbers can be positive or negative because integers can also be both positive and negative.</b>
+                  </p>
+                  <button class="btn-next" id="moreAns">
+                    <b>Next</b>
+                              </button>
+              </div>
+            </div>
+          
+          </div>
+    </div>
+<script src="/learn/real-second-question.js"></script>
+<script src="/learn/learnr.js"></script>
+</body>
+</html>

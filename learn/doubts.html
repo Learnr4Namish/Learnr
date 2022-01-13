@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/learn/red_learnr.png" type="image/x-icon">
+    <link rel="stylesheet" href="/learn/style.css">
+    <link rel="stylesheet" href="/learn/row.css">
+    <title>Learnr :Doubts</title>
+</head>
+<body class="regular">
+    <div class="parent">
+        <img src="red_learnr.png" alt="icon" width="36" height="36">
+<p class="askrText"><b>Learnr: Doubts</b></p>
+    </div>
+    <div class="raiseUp-less">
+        <p class="description"><b>This is the place to solve your doubts in any chapter you have doubt in. Please enter your question below to ask your question. The answer will be emailed to your provided email address within 24 hours. It may take even longer such as a week if there's a holiday or something else. By the way, It usually doesn't take to answer a question for more than 24 hours.</b></p>
+        <p class="description"><b>Note: We ask you for your email address because we will send the answer with expanation on the email address you provide us. If you don't provide your email address, then you can't be able get your answer for your doubt. And another thing you should notice is that your email address should be valid. Otherwise, you will not be able to get the solution for your asked question.</b></p>
+    <!--<form action="mailto:learnr.doubts@gmail.com?subject=question&body=question" style="transform: translateY(-18px);">
+        <input type="text" class="formInput" placeholder="Your Question" style="margin-top: 4px;" name="question">
+        <button type="submit" class="btn-next" style="background-color: black; color: white; transform: translateY(8px);"><b>Submit</b></button>
+    </form> -->
+    <form id="asker" action="https://postmail.invotes.com/send"
+    method="post" id="email_form" style="transform: translateY(-20px);">
+
+    <input type="text" name="subject" placeholder="Email Address" class="formInput"/>
+    <input type="text" name="text" placeholder="Question" class="formInput" style="margin-top: 5px;"></input>
+    <input type="hidden" name="access_token" value="p10l689d1esrh1gokc7xk2aq" />
+      <!-- return urls can be fully qualified -OR-
+         start with / for root relative -OR-
+         start with . for url relative --> 
+    <input type="hidden" name="success_url" value=".?message=Email+Successfully+Sent%21&isError=0" />
+    <input type="hidden" name="error_url" value=".?message=Email+could+not+be+sent.&isError=1" />
+   
+
+    <!-- set the reply-to address -->
+    <!-- <input type="text" name="reply_to"
+                placeholder="Your Email" /> -->
+
+    <!-- to append extra fields, use the extra_ prefix.
+        Entries will be appended to your message body. -->
+    <!-- <input type="text" name="extra_phone_number"
+                placeholder="Phone Number" /> -->
+
+    <!-- to split your message into 160 chars
+         for an sms gateway -->
+    <!-- <input type="hidden"
+                name="sms_format" value="true" /> -->
+   
+    <input id="submit_form" type="submit" value="Send" class="btn-ask" style="background-color: black; color: white; transform: translateY(8px); width: 100%;"/>
+    <!-- not required, but we'd appreciate it if you'd link to us somewhere on your site -->
+</form>
+<div style="color: white;">
+"_____________________"
+"_____________________"
+</div>     
+<!-- optional, prevents the submit button from being pressed more than once -->
+<script>
+    document.getElementById('submit_form').style.fontWeight = "bold";
+    var submitButton = document.getElementById("submit_form");
+    var form = document.getElementById("email_form");
+    form.addEventListener("submit", function (e) {
+        setTimeout(function() {
+            submitButton.value = "Sending...";
+            submitButton.disabled = true;
+        }, 1);
+    });
+</script>
+    </div>
+</body>
+</html>

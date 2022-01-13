@@ -1,0 +1,19 @@
+.parent {
+    display: flex;
+    justify-content: left;
+    text-align: left;
+    border-bottom: rgb(0, 0, 0);
+    border-style: inherit;
+    border-width: 1px;
+  }
+  .askrText {
+      font-size: 24px;
+      justify-self: flex-start;
+      margin-left: 16px;
+      color: rgb(0, 0, 0);
+      transform: translateY(-22px);
+  }
+  .marginLeft {
+      margin-left: 16px;
+      transform: translateY(-4px);
+  }

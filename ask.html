@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="row.css">
+    <link rel="shortcut icon" href="red_learnr.png" type="image/png">
+    <title>Ask a question</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body class="regular">
+    <div class="parent">
+        <img src="icon.png" alt="icon" width="36" height="36">  
+        <p class="askrText"><b>Askr: Ask your question</b></p> 
+    </div>
+            <div class="firstText">
+                <input class="input-id" type="text" id="firstText" name="userId" disabled>
+            </div>
+            <div class="secondText">
+                <input class="input-id" type="text" id="questionText" name="questionText" placeholder="Your Question">
+            </div>
+            <div></div>
+            <input class="btn-ask" value="Submit" type="button" id="askQues">
+            <div></div>
+            <span class="material-icons">
+                warning 
+                </span>
+                <span>Please don't go back or close window and start from the beginning. If you do so, then your user id will renew and change into a new one!</span>
+        </form>
+        
+    <script type="module">
+        // Initialize Firebase
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js";
+        import { getDatabase, ref, set, push, child } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-database.js";
+        const firebaseConfig = {
+    apiKey: "AIzaSyCK0g-Xs1AtA_uScAzt10a3tumpkAW22Vw",
+    authDomain: "askr-app.firebaseapp.com",
+    databaseURL: "https://askr-app-default-rtdb.firebaseio.com",
+    projectId: "askr-app",
+    storageBucket: "askr-app.appspot.com",
+    messagingSenderId: "798070255065",
+    appId: "1:798070255065:web:0a50b007963704e8453dc8",
+    measurementId: "G-XVGXQQWSYY"
+  };
+  const app = initializeApp(firebaseConfig);
+var address = document.URL;
+var userIdGet = address.substring(address.indexOf("&") + 1);
+var userId = userIdGet.substring(userIdGet.indexOf("=") + 1);
+console.log(address);
+console.log(userIdGet);
+console.log(userId);
+document.getElementById("firstText").value = userId;
+const question = document.getElementById("questionText").value;
+const questionLength = question.length;
+console.log(questionLength);
+const ask = document.getElementById("askQues");
+ask.addEventListener("click", function() {
+//set(ref(db, 'questionList/' + questionGet), {
+    //questionGet: dashes
+  //})
+  const questionId = Math.floor(Math.random() * 10000000);
+  const no = "no";
+  const reporter = getDatabase();
+  push(child(ref(reporter), 'posts'));
+});
+
+    </script>
+</body>
+</html>

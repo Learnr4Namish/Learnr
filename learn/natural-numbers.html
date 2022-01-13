@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head class="regular"
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/learn/style.css">
+    <link rel="stylesheet" href="/learn/row.css">
+    <title>Learnr :Natural Numbes</title>
+</head>
+<body class="regular">
+    <div class="parent">
+        <img src="icon.png" alt="icon" width="36" height="36">
+<p class="askrText"><b>Natural Numbers</b></p>
+    </div>
+    <div class="raiseUp-less">
+        <video width="360" height="360" class="videoClass" onmouseover="return false;" oncontextmenu="return false;" controls>
+          <source src="/learn/Learnr/natural_nums.mp4">
+          </video>
+          <div>
+              <button class="btn-next" id="myBtn" style="color: white; background-color: red;"><b>Next</b></button>
+          </div>
+          <div id="myModal" class="modal">
+          
+              <!-- Modal content -->
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="parent">
+                  <img src="red_learnr.png" alt="icon" width="36" height="36">
+          <p class="askrText"><b>Learnr Question</b></p>
+              </div>
+                <p class="description" id="gpt" style="color: black;"><b>Now is the time for a question! Answer the question below to show us what you have learnt.</b></p>
+                <p class="description" id="mbr" style="color: black;"><b>Natural Numbers start from:- </b></p>
+                <div style="transform: translateY(-16px);">
+                  <div class="answerDiv-ls" id="firstCheck" onclick="firstAns()"><b>0</b></div>
+                  <div class="answerDiv-ls" id="secondCheck" onclick="secAns()"><b>-1</b></div>
+                  <div class="answerDiv-ls" id="thirdCheck" onclick="thiAns()"><b>2</b></div>
+                  <div class="answerDiv-ls" id="lastCheck" onclick="foAns()"><b>1</b></div>
+                    <button class="btn-next" id="checkAns" style="color: white; background-color: black; font-weight: bold; border: none;">
+          <b>Check</b>
+                    </button>
+                    <p class="askrtText" style="font-size: 24px;" id="explanation">
+                      <b> Explanation:- Natural Numbers start from 1 and go on infinitely. They are also known as 'counting numbers' and are represented by the letter <span class="imp">'N'.</span></b></p>
+                    <button class="btn-next" id="moreAns">
+                      <b>Next</b>
+                                </button>
+                </div>
+                <script src="/learn/introduction-to-real.js"></script>
+              </div>
+            
+            </div>
+      </div>
+</body>
+</html>

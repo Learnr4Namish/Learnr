@@ -1,0 +1,26 @@
+.parent {
+    display: flex;
+    justify-content: left;
+    text-align: left;
+    border-color: black;
+    border-bottom: black;
+    background-color: rgb(255, 255, 255);
+    border-radius: 16px;
+    color: rgb(0, 0, 0);
+  }
+  .askrText {
+      font-size: 24px;
+      justify-self: flex-start;
+      margin-left: 16px;
+      color: rgb(0, 0, 0);
+      transform: translateY(-20px);
+  }
+  .marginLeft {
+      margin-left: 16px;
+      transform: translateY(-4px);
+  }
+
+h1 {
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+}

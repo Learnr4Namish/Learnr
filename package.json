@@ -1,0 +1,17 @@
+{
+  "name": "learnr",
+  "version": "1.0.0",
+  "description": "<p align=\"center\">   <a href=\"http://materializecss.com/\">     <img src=\"http://materializecss.com/res/materialize.svg\" width=\"150\">   </a> </p>",
+  "main": "index.js",
+  "scripts": {
+    "test": "&amp;&amp; exit 1",
+    "start": "node index.js"
+  },
+  "author": "Namish",
+  "license": "ISC",
+  "dependencies": {
+    "agora-access-token": "^2.0.4",
+    "express": "^4.17.2",
+    "req": "^0.1.4"
+  }
+}
