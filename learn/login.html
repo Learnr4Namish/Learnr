@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/learn/style.css">
+    <link rel="stylesheet" href="/learn/row.css">
+    <link rel="stylesheet" href="/learn/subjects.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="shortcut icon" href="/learn/red_learnr.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+<meta http-equiv='cache-control' content='no-cache'>
+<meta http-equiv='expires' content='0'>
+<meta http-equiv='pragma' content='no-cache'>
+    <title>Learnr - Login</title>
+</head>
+<body class="regular">
+    <div class="parent" id="parentZone">
+    <div id="mySidenav" class="sidenav">
+        <button class="closebtn" onclick="closeNav()" style="background-color: rgb(255, 0, 0); border:none; color:white;">&times;</button>
+        <a href="calculator/index.html">Learnr Calculator</a>
+        <a href="quiz/index.html">Learnr Quiz</a>
+        <a href="/learn/meet.html">Learnr Meet [New]</a>
+        <a href="/learn/stream.html">Learnr Live stream [New]</a>
+          <li onclick="askNow(anonymous, userName)">Learnr Concepts</li>
+          <a href="/learn/login.html">Learnr Login</a>
+          <a href="/learn/newUser.html">Learnr New Account</a>
+          <a href="/">Learnr Home</a>
+          <button class="btn-ask" style="font-weight:bold; transform: translateY(16px);" onclick="location.href = '/learn/doubts.html';"><b>Ask a doubt</b></button>
+      </div>
+      
+      <!-- Use any element to open the sidenav -->
+      <span class="material-icons" onclick="openNav()" width="64" height="64">
+        menu
+        </span>
+<img src="red_learnr.png" alt="icon" width="36" height="36" class="marginLeft" id="logoImg">
+<p class="askrText regular" id="askrText"><b>Learnr Login</b></p>
+<div class="darkOrLight">
+
+</div>
+    </div>
+           </p>
+    <div class="raiseUp" id="raiseDiv">
+        <h2><b>Let's login to your account!
+        </b></h2>
+        <input type="email" class="formInput" name="emailText" id="emailText" placeholder="Email Address" required>
+        <input type="password" class="formInput" name="passText" id="passText" placeholder="Password" style="margin-top: 5px;" required>
+    <button class="btn-next regular" style="background-color: black; color: white; margin-top: 10px;"><b>Login</b></button>
+<a href="/learn/newuser.html" style="transform: translateY(8px);"><b>I am a new user</b></a>    
+</div>
+      <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+      <script src="/side-nav.js"></script>
+      <script src="/ask.js"></script>
+      <script>
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+      </script>
+</body>
+</html>

@@ -14,7 +14,12 @@ if (dataToGet === "message=Email+Successfully+Sent%21&isError=0") {
             alert("Oops, looks like you have left your email address empty! Please try again and enter a valid email address!");  
             location.href = "/learn/doubts.html#asker"
           }else{
-      
+            if (dataToGet === "error=unable%to%join%your%learnr%meeting"){
+                alert("Oops! We were unable to join your learnr meeting! The token might have expired or the channel you have entered is invalid!");  
+                location.href = "/"
+              }else{
+          
+              }
           }
     }
 }

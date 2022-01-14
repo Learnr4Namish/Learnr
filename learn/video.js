@@ -48,6 +48,7 @@ $("#join-form").submit(async function (e) {
     await join();
   } catch (error) {
     console.error(error);
+   location.href = "/index.html?error=unable%to%join%your%learnr%meeting";
   } finally {
     $("#leave").attr("disabled", false);
   }

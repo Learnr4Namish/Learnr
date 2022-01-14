@@ -1,0 +1,34 @@
+ var options = {
+  userName: null,
+  email: null,
+  password: null
+};
+var urlParams = new URL(location.href).searchParams;
+options.userName = urlParams.get("name");
+options.email = urlParams.get("email");
+options.password = urlParams.get("password");
+if (options.userName && options.email && options.password) {
+    $("#nameText").val(options.userName);
+    $("#emailText").val(options.email);
+    $("#password").val(options.password);
+    $("#joiner").submit();
+  }else{
+    if (options.userName === null) {
+      alert("Sorry! We couldn't get your name for creating your learnr account! Please re-enter all your required credentials!");
+      location.href = "/learn/newUser.html";
+    }else{
+      if (options.email === null) {
+        alert("Oops! The server retured an error for the email address you have entered. Maybe you haven't entered your email address!");
+        location.href = "/learn/newUser.html";
+      }else{
+        if (options.password === null) {
+          alert("Your password is empty! Please try again!");
+        location.href = "/learn/newUser.html";
+        }else{
+            if (options.userName === null && options.email === null && options.password === null){
+       console.log("Welcome to Learnr!");
+            }
+        }
+      }
+    }
+  }
